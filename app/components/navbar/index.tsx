@@ -5,6 +5,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
+import { NavbarItems } from "./navbaritems";
+
 export function Navbar() {
   const [open, setOpen] = useState(false);
 
@@ -22,49 +24,16 @@ export function Navbar() {
           />
         </Link>
 
-        {/* Desktop menu */}
         <nav className="hidden items-center gap-8 md:flex">
-          <Link
-            href="/"
-            className="font-medium text-slate-700 hover:text-blue-600"
-          >
-            Home
+          {NavbarItems.map((item) => (
+            <Link
+              key={item.name}
+              href={item.href}
+              className="font-medium text-slate-700 hover:text-blue-600"
+            >
+              {item.name}
           </Link>
-
-          <Link
-            href="/destinations"
-            className="font-medium text-slate-700 hover:text-blue-600"
-          >
-            Destinations
-          </Link>
-
-          <Link
-            href="/deals"
-            className="font-medium text-orange-500 hover:text-orange-600"
-          >
-            Deals
-          </Link>
-
-          <Link
-            href="/about"
-            className="font-medium text-slate-700 hover:text-blue-600"
-          >
-            About
-          </Link>
-
-          <Link
-            href="/contact"
-            className="font-medium text-slate-700 hover:text-blue-600"
-          >
-            Contact
-          </Link>
-
-          <Link
-            href="/auth/login"
-            className="rounded-md border border-blue-600 px-4 py-2 font-medium text-blue-600 transition hover:bg-blue-600 hover:text-white"
-          >
-            Sign in
-          </Link>
+          ))}
         </nav>
 
         {/* Mobile button */}
