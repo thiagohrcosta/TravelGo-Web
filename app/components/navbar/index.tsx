@@ -4,7 +4,6 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
-
 import { NavbarItems } from "./navbaritems";
 
 export function Navbar() {
@@ -24,6 +23,7 @@ export function Navbar() {
           />
         </Link>
 
+        {/* Desktop menu */}
         <nav className="hidden items-center gap-8 md:flex">
           {NavbarItems.map((item) => (
             <Link
@@ -32,8 +32,15 @@ export function Navbar() {
               className="font-medium text-slate-700 hover:text-blue-600"
             >
               {item.name}
-          </Link>
+            </Link>
           ))}
+
+          <Link
+            href="/auth/login"
+            className="rounded-md border border-blue-600 px-4 py-2 font-medium text-blue-600 transition hover:bg-blue-600 hover:text-white"
+          >
+            Sign in
+          </Link>
         </nav>
 
         {/* Mobile button */}
