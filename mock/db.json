@@ -1,0 +1,32 @@
+{
+  "top-destinations": [
+    {
+      "id": 1,
+      "title": "Paris",
+      "price": 499,
+      "imageUrl": "/paris.png",
+      "slug": "paris-fr"
+    },
+    {
+      "id": 2,
+      "title": "New York",
+      "price": 299,
+      "imageUrl": "/ny.png",
+      "slug": "new-york-usa"
+    },
+    {
+      "id": 3,
+      "title": "Tokyo",
+      "price": 599,
+      "imageUrl": "/tokyo.png",
+      "slug": "tokyo-japan"
+    },
+    {
+      "id": 4,
+      "title": "Hawaii",
+      "price": 399,
+      "imageUrl": "/hawaii.png",
+      "slug": "hawaii-usa"
+    }
+  ]
+}
