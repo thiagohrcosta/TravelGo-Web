@@ -1,9 +1,25 @@
 import { Star } from "lucide-react";
 
-import { testimonials } from "./fakeTestimonialsData";
 import Image from "next/image";
 
-export default function Testimonials() {
+type Testimonial = {
+  id: number;
+  name: string;
+  image: string;
+  location: string;
+  message: string;
+  rating: number;
+};
+
+type TestimonialsProps = {
+  testimonials?: Testimonial[];
+};
+
+export default function Testimonials({ testimonials = [] }: TestimonialsProps) {
+  if (testimonials.length === 0) {
+    return null;
+  }
+
   return (
     <section className="bg-slate-50 py-16">
       <div className="mx-auto max-w-7xl px-6">
@@ -35,15 +51,14 @@ export default function Testimonials() {
               </p>
 
               <div className="mt-6 flex items-center">
-                <div>
-                  <Image
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    width={48}
-                    height={48}
-                    className="inline-block h-12 w-12 rounded-full object-cover mr-4"
-                  />
-                </div>
+                <Image
+                  src={testimonial.image}
+                  alt={testimonial.name}
+                  width={48}
+                  height={48}
+                  className="mr-4 h-12 w-12 rounded-full object-cover"
+                />
+
                 <div>
                   <p className="font-semibold text-slate-800">
                     {testimonial.name}
