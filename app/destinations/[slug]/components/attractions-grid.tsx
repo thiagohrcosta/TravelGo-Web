@@ -28,14 +28,12 @@ export default function AttractionsGrid({
             key={attraction.id}
             className="flex gap-4 rounded-xl bg-white p-4 shadow-sm transition hover:shadow-md"
           >
-            {/* Imagem */}
             <img
               src={attraction.imageUrl}
               alt={attraction.name}
               className="h-36 w-48 shrink-0 rounded-lg object-cover"
             />
 
-            {/* Conteúdo */}
             <div className="flex flex-col justify-between">
               <div>
                 <div className="flex items-center gap-2">

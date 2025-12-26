@@ -20,7 +20,6 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Links */}
           <div>
             <h4 className="mb-4 font-semibold text-slate-800">
               Company
@@ -49,7 +48,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Support */}
           <div>
             <h4 className="mb-4 font-semibold text-slate-800">
               Support
@@ -73,7 +71,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Social */}
           <div>
             <h4 className="mb-4 font-semibold text-slate-800">
               Follow Us
@@ -101,7 +98,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom */}
         <div className="mt-10 border-t border-slate-200 pt-6 text-center text-sm text-slate-500">
           © {new Date().getFullYear()} TravelGo. All rights reserved.
         </div>
