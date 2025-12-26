@@ -14,9 +14,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Travel Go - WEB",
-  description: "A Travel company to help you explore the world.",
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"
+  ),
+  title: {
+    default: "TravelGo | Discover Top Travel Destinations",
+    template: "%s | TravelGo",
+  },
+  description:
+    "Discover and book top travel destinations worldwide with TravelGo.",
 };
+
 
 export default function RootLayout({
   children,

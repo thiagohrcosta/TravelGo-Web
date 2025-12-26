@@ -1,5 +1,6 @@
 import HomeBanner from "./components/banner";
 import TopDestinations from "./components/TopDestinations";
+import { buildSeoMetadata } from "@/lib/seo";
 
 type Destination = {
   id: number;
@@ -25,6 +26,12 @@ async function getTopDestinations(): Promise<Destination[]> {
 
   return res.json();
 }
+
+export const metadata = buildSeoMetadata({
+  title: "TravelGo | Discover Top Travel Destinations Worldwide",
+  description:
+    "Discover and book top travel destinations worldwide with TravelGo. Explore deals, attractions, and plan your next adventure.",
+});
 
 export default async function Home() {
   const destinations = await getTopDestinations();
