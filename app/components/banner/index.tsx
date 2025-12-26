@@ -20,7 +20,6 @@ export default function HomeBanner() {
 
       <div className="mx-auto flex min-h-[600px] max-w-7xl items-center px-6">
         <div className="grid w-full grid-cols-1 gap-10 md:grid-cols-2">
-          {/* Left content */}
           <div className="space-y-6 py-20 lg:py-40">
             <h1 className="text-4xl font-bold leading-tight text-blue-900 md:text-5xl">
               Explore the World <br />
