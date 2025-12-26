@@ -11,6 +11,15 @@ type Destination = {
   slug: string;
 };
 
+type Testimonial = {
+  id: number;
+  name: string;
+  image: string;
+  location: string;
+  message: string;
+  rating: number;
+};
+
 async function getTopDestinations(): Promise<Destination[]> {
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}/top-destinations`,
@@ -28,6 +37,23 @@ async function getTopDestinations(): Promise<Destination[]> {
   return res.json();
 }
 
+async function getTestimonials(): Promise<Testimonial[]> {
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_API_URL}/testimonials`,
+    {
+      next: {
+        revalidate: 60 * 60,
+      },
+    }
+  );
+
+  if (!res.ok) {
+    throw new Error("Failed to fetch testimonials");
+  }
+
+  return res.json();
+}
+
 export const metadata = buildSeoMetadata({
   title: "TravelGo | Discover Top Travel Destinations Worldwide",
   description:
@@ -36,6 +62,7 @@ export const metadata = buildSeoMetadata({
 
 export default async function Home() {
   const destinations = await getTopDestinations();
+  const testimonials = await getTestimonials();
 
   return (
     <>
@@ -43,7 +70,9 @@ export default async function Home() {
       <TopDestinations
         destinations={destinations}
       />
-      <Testimonials />
+      <Testimonials
+        testimonials={testimonials}
+      />
     </>
   );
 }
