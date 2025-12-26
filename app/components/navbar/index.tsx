@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { NavbarItems } from "./navbaritems";
+import Logo from "../logo";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
@@ -12,15 +13,8 @@ export function Navbar() {
   return (
     <header className="w-full border-b bg-white">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <Image
-            src="/logo.png"
-            alt="TravelGo Logo"
-            width={140}
-            height={40}
-            priority
-          />
+          <Logo />
         </Link>
 
         {/* Desktop menu */}

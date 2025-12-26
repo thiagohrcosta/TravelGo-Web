@@ -1,4 +1,5 @@
 import HomeBanner from "./components/banner";
+import Testimonials from "./components/testimonials";
 import TopDestinations from "./components/TopDestinations";
 import { buildSeoMetadata } from "@/lib/seo";
 
@@ -42,6 +43,7 @@ export default async function Home() {
       <TopDestinations
         destinations={destinations}
       />
+      <Testimonials />
     </>
   );
 }
