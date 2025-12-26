@@ -25,7 +25,6 @@ async function getDestinationBySlug(slug: string) {
   return data[0];
 }
 
-
 export async function generateMetadata({ params }: PageProps) {
   const { slug } = await params;
 

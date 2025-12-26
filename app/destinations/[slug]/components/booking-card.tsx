@@ -2,6 +2,8 @@ import { Check } from "lucide-react";
 
 type BookingCardProps = {
   price: number;
+  originalPrice: number;
+  discountedPrice: number;
   includedServices: string[];
 }
 
@@ -11,7 +13,10 @@ export default function BookingCard({ destination }: { destination: BookingCardP
       <p className="text-sm text-slate-500">Starting at</p>
 
       <p className="text-3xl font-semibold text-blue-900">
-        ${destination.price}
+        {destination.originalPrice !== destination.price && (
+          <span className="line-through text-slate-500 mr-2">{destination.originalPrice}</span>
+        )}
+        $ {destination.price}
         <span className="text-sm text-slate-500"> / person</span>
       </p>
 

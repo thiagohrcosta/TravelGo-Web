@@ -8,6 +8,9 @@
       "images": ["/paris-fr.png", "/paris-fr-2.png", "/paris-fr-3.png"],
       "heroImage": "/paris-hero.png",
       "price": 599,
+      "originalPrice": 599,
+      "discountedPrice": 599,
+      "discountPercent": 0,
       "includedServices": [
         "Accommodation in a 4-star hotel",
         "Daily breakfast",
@@ -45,6 +48,57 @@
           "name": "Parc Des Prince",
           "imageUrl": "/attractions-fr-4.png",
           "details": "Parc Des Prince is a famous football stadium in Paris, home to the Paris Saint-Germain Football Club. It hosts various sporting events and concerts throughout the year."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Santoniri",
+      "slug": "santorini-gr",
+      "description": "Discover the breathtaking beauty of Santorini, Greece, with its stunning sunsets",
+      "images": ["/santorini-gr-1.png", "/santorini-gr-2.png", "/santorini-gr-3.png"],
+      "heroImage": "/santorini-hero.png",
+      "price": 999,
+      "originalPrice": 1799,
+      "discountedPrice": 999,
+      "discountPercent": 44,
+      "includedServices": [
+        "Accommodation in a cliffside villa",
+        "Daily breakfast with a view",
+        "Sunset cruise",
+        "Wine tasting tour",
+        "Airport transfers"
+      ],
+      "longDescription": "Santorini, a picturesque island in the Aegean Sea, is famous for its stunning sunsets, white-washed buildings, and crystal-clear waters. Visitors can explore charming villages like Oia and Fira, relax on unique volcanic beaches, and indulge in delicious Greek cuisine. The island also offers opportunities for hiking, wine tasting, and boat tours to nearby islands. Santorini's rich history is evident in its archaeological sites, such as Akrotiri, an ancient Minoan city preserved in volcanic ash. Whether you're seeking romance, adventure, or relaxation, Santorini is a perfect destination.",
+      "tips": [
+        "Visit Oia for the best sunset views.",
+        "Rent a car or ATV to explore the island at your own pace.",
+        "Try local wines at a vineyard tour."
+      ],
+      "attractions": [
+        {
+          "id": 1,
+          "name": "Oia Village",
+          "imageUrl": "/attractions-gr-1.png",
+          "details": "Oia Village is a picturesque town on the island of Santorini, known for its stunning sunsets, white-washed buildings, and blue-domed churches. It is a popular destination for tourists seeking breathtaking views and charming streets to explore."
+        },
+        {
+          "id": 2,
+          "name": "Red Beach",
+          "imageUrl": "/attractions-gr-2.png",
+          "details": "Red Beach is a unique beach on the island of Santorini, famous for its striking red volcanic sand and cliffs. It offers crystal-clear waters for swimming and snorkeling, making it a popular spot for visitors looking to experience the island's natural beauty."
+        },
+        {
+          "id": 3,
+          "name": "Ancient Akrotiri",
+          "imageUrl": "/attractions-gr-3.png",
+          "details": "Ancient Akrotiri is a well-preserved archaeological site on the island of Santorini, showcasing the remains of a Minoan Bronze Age settlement that was buried by a volcanic eruption. Visitors can explore the ruins and learn about the history and culture of this ancient civilization."
+        },
+        {
+          "id": 4,
+          "name": "Santorini Caldera",
+          "imageUrl": "/attractions-gr-4.png",
+          "details": "The Santorini Caldera is a large volcanic crater formed by a massive eruption thousands of years ago. It is surrounded by steep cliffs and offers stunning views of the Aegean Sea, making it a popular destination for boat tours and sightseeing."
         }
       ]
     }
@@ -104,5 +158,35 @@
       "message": "I loved how fast and simple it was to book my vacation. Highly recommended!",
       "rating": 4
     }
+  ],
+  "best-deals": [
+    {
+      "id": 1,
+      "city": "Santorini, Greece",
+      "image": "/best-deal-1.png",
+      "originalPrice": 1799,
+      "discountedPrice": 999,
+      "discountPercent": 44,
+      "slug": "santorini-gr"
+    },
+    {
+      "id": 2,
+      "city": "Maldives",
+      "image": "/best-deal-2.png",
+      "originalPrice": 2499,
+      "discountedPrice": 1499,
+      "discountPercent": 40,
+      "slug": "maldives"
+    },
+    {
+      "id": 3,
+      "city": "Wien, Austria",
+      "image": "/best-deal-3.png",
+      "originalPrice": 1399,
+      "discountedPrice": 899,
+      "discountPercent": 36,
+      "slug": "wien-austria"
+    }
+
   ]
 }
