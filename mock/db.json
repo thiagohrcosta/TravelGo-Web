@@ -1,9 +1,59 @@
 {
+  "destinations": [
+    {
+      "id": 1,
+      "name": "Paris",
+      "slug": "paris-fr",
+      "description": "Experience the romance and charm of Paris, the city of lights, with its iconic landmarks, world-class cuisine, and vibrant culture.",
+      "images": ["/paris-fr.png", "/paris-fr-2.png", "/paris-fr-3.png"],
+      "heroImage": "/paris-hero.png",
+      "price": 599,
+      "includedServices": [
+        "Accommodation in a 4-star hotel",
+        "Daily breakfast",
+        "Guided city tour",
+        "Seine River cruise",
+        "Airport transfers"
+      ],
+      "longDescription": "Paris, the capital city of France, is renowned for its art, fashion, gastronomy, and culture. Visitors can explore iconic landmarks such as the Eiffel Tower, Louvre Museum, and Notre-Dame Cathedral. The city's charming neighborhoods, like Montmartre and Le Marais, offer a glimpse into Parisian life. Enjoy world-class dining at Michelin-starred restaurants or relax at a sidewalk café while people-watching. Paris is also famous for its shopping districts, including the Champs-Élysées and Galeries Lafayette. Whether you're interested in history, art, or simply soaking in the atmosphere, Paris has something for everyone.",
+      "tips": [
+        "Book tickets to the Eiffel Tower in advance to avoid long lines.",
+        "Explore the Louvre Museum early in the morning for a more peaceful experience.",
+        "Take a Seine River cruise at sunset for stunning views of the city."
+      ],
+      "attractions": [
+        {
+          "id": 1,
+          "name": "Louvre Museum",
+          "imageUrl": "/attractions-fr-1.png",
+          "details": "The Louvre Museum is the world's largest art museum and a historic monument in Paris, France. It is home to thousands of works of art, including the Mona Lisa and the Venus de Milo."
+        },
+        {
+          "id": 2,
+          "name": "Siene River Cruise",
+          "imageUrl": "/attractions-fr-2.png",
+          "details": "A Seine River cruise offers a unique perspective of Paris, allowing visitors to see iconic landmarks such as the Eiffel Tower, Notre-Dame Cathedral, and the Louvre from the water."
+        },
+        {
+          "id": 3,
+          "name": "Rue Du Croissant",
+          "imageUrl": "/attractions-fr-3.png",
+          "details": "Rue Du Croissant is a charming street in Paris known for its quaint cafes and bakeries, where visitors can enjoy authentic French pastries and coffee."
+        },
+        {
+          "id": 4,
+          "name": "Parc Des Prince",
+          "imageUrl": "/attractions-fr-4.png",
+          "details": "Parc Des Prince is a famous football stadium in Paris, home to the Paris Saint-Germain Football Club. It hosts various sporting events and concerts throughout the year."
+        }
+      ]
+    }
+  ],
   "top-destinations": [
     {
       "id": 1,
       "title": "Paris",
-      "price": 499,
+      "price": 599,
       "imageUrl": "/paris.png",
       "slug": "paris-fr"
     },
